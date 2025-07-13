@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC");
-
 @font-face {
   font-family: "Baron Neue";
-  src: url(./assets/Baron_Neue.otf) format("truetype");
+  src:
+    url(./assets/Baron_Neue.woff2) format("woff2"),
+    url(./assets/Baron_Neue.otf) format("truetype");
+  font-display: swap;
 }
 html {
   overflow-y: scroll;

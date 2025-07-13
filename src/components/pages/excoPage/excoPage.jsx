@@ -51,22 +51,24 @@ class excoPage extends Component {
                   <source
                     srcset={encodeURI(
                       "https://assets.csess.workers.dev/images/h_500,w_500,to_avif/" +
-                      `https://csess.su.hkust.edu.hk/home/images/exco/${exco.session}/${exco.nickname}.jpg`)
-                    }
+                        `https://csess.su.hkust.edu.hk/home/images/exco/${exco.session}/${exco.nickname}.jpg`,
+                    )}
                     type="image/avif"
                   />
                   <source
                     srcset={encodeURI(
                       "https://assets.csess.workers.dev/images/h_500,w_500,to_webp/" +
-                      `https://csess.su.hkust.edu.hk/home/images/exco/${exco.session}/${exco.nickname}.jpg`)
-                    }
+                        `https://csess.su.hkust.edu.hk/home/images/exco/${exco.session}/${exco.nickname}.jpg`,
+                    )}
                     type="image/webp"
                   />
                   <img
                     className="exco-img"
                     alt={exco.name}
-                    ref={addSrc(encodeURI(
-                      `https://csess.su.hkust.edu.hk/home/images/exco/${exco.session}/${exco.nickname}.jpg`),
+                    ref={addSrc(
+                      encodeURI(
+                        `https://csess.su.hkust.edu.hk/home/images/exco/${exco.session}/${exco.nickname}.jpg`,
+                      ),
                     )}
                   />
                 </picture>
